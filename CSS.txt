@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: white;
+    line-height: 1.5;
+}
+
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 13px 23px;
+    border-radius: 6px;
+    background: #ff4f8b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff6b9c;
+}
+
+/* HERO SECTION */
+/* Your first div after header */
+header + div {
+    min-height: 600px;
+    padding: 120px 10%;
+    background:
+        radial-gradient(circle at 75% 40%, #421c35 0%, transparent 35%),
+        #0b0b0b;
+}
+
+header + div > p:first-child {
+    color: #ff6b9c;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header + div h1 {
+    font-size: clamp(60px, 8vw, 120px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    margin: 20px 0 30px;
+}
+
+header + div p {
+    max-width: 520px;
+    color: #aaa;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+header + div button {
+    margin-right: 12px;
+}
+
+
+/* MAIN CONTENT SECTIONS */
+body > h2 {
+    font-size: 55px;
+    max-width: 800px;
+    margin: 100px 10% 20px;
+    line-height: 1;
+}
+
+body > p {
+    margin-left: 10%;
+    color: #999;
+    font-size: 18px;
+    max-width: 550px;
+}
+
+body > button {
+    margin: 30px 10%;
+}
+
+/* FINAL SECTION */
+body > h2:last-of-type {
+    margin-top: 150px;
+}
+
+/* FOOTER */
+body > h2:last-of-type + p {
+    margin-bottom: 30px;
+}
+
+body > h2:last-of-type + p + button {
+    margin-bottom: 120px;
+}
+
+body > h2:last-of-type ~ h2 {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+body > h2:last-of-type ~ div {
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+body > h2:last-of-type ~ div a {
+    color: #999;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+body > h2:last-of-type ~ div a:hover {
+    color: white;
+}
+
+body > h2:last-of-type ~ p:last-child {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
